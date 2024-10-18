@@ -1,1 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap'
+@import "@fontsource/poppins" // Defaults to weight 400
+@import "@fontsource/poppins/400.css" // Specify weight
+@import "@fontsource/poppins/400-italic.css" // Specify weight and style
+
+/* VARS */
+$dark-bg-color: #141a22
+$dark-font-color: #ffffff
+$ligh-bg-color: #ffffff
+$ligh-font-color: #000000
+
+$general-font: 'Poppins'
+
+
+@keyframes spin
+  to
+    transform: rotate(360deg)
+
+body
+  transition: background-color 0.3s, color 0.3s
+  font-family: $general-font
+
+  .toggle-theme
+    border-radius: 100%
+    width: 40px
+    height: 40px
+    padding: 0 12px
+    display: flex
+    justify-content: center
+    align-items: center
+    box-shadow: 
+      inset : 0 8px 60px rgba(0, 0, 0, 0.3),
+      inset : 8px 0 8px rgba(0, 0, 0, 0.3),
+      inset : 0 -4px 4px rgba(0, 0, 0, 0.3)
+    img
+        height: 60px
+    .fa-solid.anim
+        margin: auto
+        animation: spin 0.6s
+    .fa-sun
+      color: $ligh-font-color
+    .fa-moon
+      color: $dark-font-color
+
+.light-theme
+  background-color: $ligh-bg-color
+  color: $ligh-font-color
+  .toggle-theme
+    background: $dark-bg-color
+    &:active
+      background: $dark-bg-color
+
+.dark-theme
+  background-color: $dark-bg-color
+  color: $dark-font-color
+  .toggle-theme
+    background: $ligh-bg-color
+    &:active
+      background: $ligh-bg-color
+

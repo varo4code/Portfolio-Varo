@@ -1,0 +1,27 @@
+
+<header class="site-navbar site-navbar-target" role="banner">
+
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-brand">
+        <a routerLink="/">
+          <img [src]="logoPath" alt="Logo" class="navbar-logo">
+        </a>
+      </div>
+      <div class="navbar-links">
+        <a routerLink="/">Home</a>
+        <a routerLink="/me">Resume</a>
+
+      </div>
+      <button (click)="toggleTheme()" class="btn toggle-theme">
+        <i class="fa-solid " [class] = "{
+          'anim': isAnimActive, 
+          'fa-sun' : isDarkTheme,
+          'fa-moon' : !isDarkTheme
+        }"></i>
+      </button>
+    </nav>
+  </div>
+
+</header>
+
