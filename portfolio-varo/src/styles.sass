@@ -45,19 +45,29 @@ body
     .fa-moon
       color: $dark-font-color
 
+/* THEME */
+
 .light-theme
   background-color: $ligh-bg-color
   color: $ligh-font-color
-  .toggle-theme
+  .bg-opposite-theme
     background: $dark-bg-color
     &:active
       background: $dark-bg-color
+  .bg-theme
+    background: $ligh-bg-color
+    &:active
+      background: $ligh-bg-color
 
 .dark-theme
   background-color: $dark-bg-color
   color: $dark-font-color
-  .toggle-theme
+  .bg-opposite-theme
     background: $ligh-bg-color
     &:active
       background: $ligh-bg-color
+  .bg-theme
+    background: $dark-bg-color
+    &:active
+      background: $dark-bg-color
 

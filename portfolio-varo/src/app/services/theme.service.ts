@@ -20,8 +20,6 @@ export class ThemeService {
   }
 
   private applyTheme() {
-    console.log('cambio de tema');
-    
     if (this.isDarkTheme) {
       document.body.classList.add('dark-theme');
       document.body.classList.remove('light-theme');
