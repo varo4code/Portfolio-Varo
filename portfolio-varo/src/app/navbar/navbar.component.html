@@ -1,5 +1,5 @@
 
-<header class="site-navbar site-navbar-target" role="banner">
+<header class="site-navbar site-navbar-target mb-5 pb-3" role="banner">
 
   <div class="container">
     <nav class="navbar">
@@ -13,7 +13,7 @@
         <a routerLink="/me">Resume</a>
 
       </div>
-      <button (click)="toggleTheme()" class="btn toggle-theme bg-opposite-theme">
+      <button (click)="toggleTheme()" class="btn toggle-theme bg-opposite-theme" aria-label="toggle-theme">
         <i class="fa-solid " [class] = "{
           'anim': isAnimActive, 
           'fa-sun' : isDarkTheme,

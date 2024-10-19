@@ -16,13 +16,14 @@ export class NavbarComponent {
   isDarkTheme = true
 
   constructor(private themeService: ThemeService) {
-    this.logoPath = 'assets/logoVaroCode'+ this.themeService.currentTheme +'.png'
+    this.logoPath = 'assets/logoVaroCode'+ this.themeService.currentTheme +'.svg'
     this.toggleIco = 'assets/toggle-'+ this.themeService.currentTheme +'.png'
+    this.isDarkTheme = this.themeService.getIsDarkTheme();
   }
-  
+
   toggleTheme() {
     this.themeService.toggleTheme();
-    this.logoPath = 'assets/logoVaroCode'+ this.themeService.currentTheme +'.png'
+    this.logoPath = 'assets/logoVaroCode'+ this.themeService.currentTheme +'.svg'
     this.toggleIco = 'assets/toggle-'+ this.themeService.currentTheme +'.png'
     this.isDarkTheme = this.themeService.getIsDarkTheme();
 
