@@ -19,10 +19,17 @@
         </button>
         
         <div class="btn toggle-btn bg-opposite-theme mr-1">
-          <img class="flagicon"  src="assets/flags/en.png">
-          <div class="drop-content bg-opposite-theme">
-            <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
-            <img class="flagicon" (click)="changeLang('fr')" src="assets/flags/fr.png">
+          <img class="flagicon" (click)="toggleFlags()" [src]="'assets/flags/'+this.currentLang+'.png'">
+          <div #dropFlags class="drop-content bg-opposite-theme">
+            @if (currentLang != 'en') {
+              <img class="flagicon" (click)="changeLang('en')" src="assets/flags/en.png">
+            }
+            @if (currentLang != 'es') {
+              <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
+            }
+            @if (currentLang != 'fr') {
+              <img class="flagicon" (click)="changeLang('fr')" src="assets/flags/fr.png">
+            }
 
           </div>
         </div> 

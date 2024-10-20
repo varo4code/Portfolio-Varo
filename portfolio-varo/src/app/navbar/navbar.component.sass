@@ -15,12 +15,58 @@
                 font-weight: bold
     
     .drop-content
-        display: flex
+        display: none
         flex-direction: column
         position: absolute
         top: 30px
         padding: 40px 5px 5px 5px
         z-index: 1
         border-radius: 50px
+        &.open
+            display: flex
+            animation: scale-up 0.3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both
+        &.closing
+            display: flex
+            animation: scale-down 0.3s cubic-bezier(0.250, 0.460, 0.450, 0.940) both
+            img
+                animation: flags-close 0.1s ease forwards
         img
             margin-bottom: 5px
+            opacity: 0
+            animation: flags-open 0.7s ease forwards
+
+
+@keyframes scale-up
+    0%  
+        top: 50px
+        transform: scaleY(0)
+        transform-origin: 100% 0%
+    100% 
+        transform: scaleY(1)
+        transform-origin: 100% 0%
+
+@keyframes scale-down
+    0% 
+        transform: scaleY(1)
+        transform-origin: 100% 0%
+    70%
+        opacity: 1
+    75%
+        opacity: 0
+    100% 
+        top: 50px
+        transform: scaleY(0)
+        transform-origin: 100% 0%
+
+@keyframes flags-open
+    0% 
+        opacity: 0
+    100%
+        opacity: 1
+        transform: rotate(360deg)
+
+@keyframes flags-close
+    0% 
+        opacity: 1
+    100%
+        opacity: 0
