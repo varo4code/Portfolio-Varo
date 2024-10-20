@@ -19,7 +19,12 @@
         </button>
         
         <div class="btn toggle-btn bg-opposite-theme mr-1">
-          <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
+          <img class="flagicon"  src="assets/flags/en.png">
+          <div class="drop-content bg-opposite-theme">
+            <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
+            <img class="flagicon" (click)="changeLang('fr')" src="assets/flags/fr.png">
+
+          </div>
         </div> 
         
       </div>
