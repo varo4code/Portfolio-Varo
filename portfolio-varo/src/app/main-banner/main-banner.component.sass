@@ -16,3 +16,30 @@
     width: 350px
     opacity: 0.95
     filter: saturate(110%) brightness(0.9)
+
+@media (width < 1200px) 
+    .banner-content
+        .banner-image
+            display: none
+        .banner-titles
+            width: 100%
+            h4
+                font-size: 19px
+            h3
+                font-size: 27px
+            h2
+                font-size: 70px
+            .text-right
+                text-align: unset
+
+@media (width < 768px) 
+    .banner-content
+        .banner-titles
+            width: 100%
+            padding-right: unset
+            h4
+                font-size: 14px
+            h3
+                font-size: 22px
+            h2
+                font-size: 45px
