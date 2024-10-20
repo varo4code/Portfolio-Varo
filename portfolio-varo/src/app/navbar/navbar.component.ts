@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { ThemeService } from '../services/theme.service';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-navbar',
@@ -9,6 +10,8 @@ import { ThemeService } from '../services/theme.service';
   styleUrl: './navbar.component.sass'
 })
 export class NavbarComponent {
+
+  translate: TranslateService = inject(TranslateService);
 
   logoPath: String = 'assets/logoVaroCodedark.png';
   toggleIco: String = 'assets/toggle-dark.png'
@@ -31,6 +34,11 @@ export class NavbarComponent {
     setTimeout( () => {
       this.isAnimActive = false;
     }, 500)
+  }
+
+  changeLang(lang: string) {
+    this.translate.use(lang);
+
   }
 
 }

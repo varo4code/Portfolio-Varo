@@ -8,18 +8,21 @@
           <img [src]="logoPath" alt="Logo" class="navbar-logo">
         </a>
       </div>
-      <div class="navbar-links">
-        <a routerLink="/">Home</a>
-        <a routerLink="/me">Resume</a>
-
+      <!-- <div class="navbar-links"></div> -->
+      <div class="d-flex">
+        <button (click)="toggleTheme()" class="btn toggle-btn bg-opposite-theme" aria-label="toggle-theme">
+          <i class="fa-solid " [class] = "{
+            'anim': isAnimActive, 
+            'fa-sun' : isDarkTheme,
+            'fa-moon' : !isDarkTheme
+          }"></i>
+        </button>
+        
+        <div class="btn toggle-btn bg-opposite-theme mr-1">
+          <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
+        </div> 
+        
       </div>
-      <button (click)="toggleTheme()" class="btn toggle-theme bg-opposite-theme" aria-label="toggle-theme">
-        <i class="fa-solid " [class] = "{
-          'anim': isAnimActive, 
-          'fa-sun' : isDarkTheme,
-          'fa-moon' : !isDarkTheme
-        }"></i>
-      </button>
     </nav>
   </div>
 

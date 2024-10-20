@@ -28,11 +28,11 @@ body
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2)
       
 
-  .toggle-theme
+  .toggle-btn
     border-radius: 100%
+    margin-left: 5px
     width: 40px
     height: 40px
-    padding: 0 12px
     display: flex
     justify-content: center
     align-items: center
@@ -49,6 +49,8 @@ body
       color: $ligh-font-color
     .fa-moon
       color: $dark-font-color
+    .flagicon
+      height: 30px
 
 /* THEME */
 
@@ -57,6 +59,7 @@ body
   color: $ligh-font-color
   .bg-opposite-theme
     background: $dark-bg-color
+    color: $dark-font-color
     &:active
       background: $dark-bg-color
   .bg-theme
@@ -69,6 +72,7 @@ body
   color: $dark-font-color
   .bg-opposite-theme
     background: $ligh-bg-color
+    color: $ligh-font-color
     &:active
       background: $ligh-bg-color
   .bg-theme
