@@ -12,13 +12,14 @@ export class LanguageService {
   private currentLang = new BehaviorSubject<string>('en');
   currentLang$ = this.currentLang.asObservable();
 
-  private availableLanguagesSubject = new BehaviorSubject<string[]>(['es', 'fr']);
-  availableLanguages$ = this.availableLanguagesSubject.asObservable();
-
-  constructor() { }
+  constructor() {
+    let l = localStorage.getItem('lang');
+    if (l != null) this.changeLang(l);
+  }
 
   changeLang(lang: string) {
     this.translate.use(lang);
     this.currentLang.next(lang);
+    localStorage.setItem('lang', lang);
   }
 }
