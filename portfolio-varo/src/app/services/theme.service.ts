@@ -8,7 +8,7 @@ export class ThemeService {
 
   private isDarkTheme = true;
 
-  private bannerImage = new BehaviorSubject<string>('assets/profile-banner-dark.png');
+  private bannerImage = new BehaviorSubject<string>('assets/profile-banner-dark.webp');
   bannerImage$ = this.bannerImage.asObservable();
 
   constructor() {
@@ -24,7 +24,7 @@ export class ThemeService {
   }
 
   private applyTheme() {
-    const imagePath = this.isDarkTheme ? 'assets/profile-banner-dark.png' : 'assets/profile-banner-light.png';
+    const imagePath = this.isDarkTheme ? 'assets/profile-banner-dark.webp' : 'assets/profile-banner-light.webp';
     this.bannerImage.next(imagePath);
     if (this.isDarkTheme) {
       document.body.classList.add('dark-theme');

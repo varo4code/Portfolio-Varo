@@ -12,7 +12,8 @@ $dark-font-color: #E6E6E6
 $ligh-bg-color: #E6E6E6   
 $ligh-font-color: #000000
 
-$yellow: #FEBD01
+$yellow: #efae02
+$blue: #4C68AD
 $general-font: 'Poppins'
 
 
@@ -60,8 +61,15 @@ body
     .flagicon
       height: 30px
 
-/* THEME */
+  .title
+    h3
+      font-weight: bold
+      text-align: center
 
+
+/* THEMES */
+
+// Light theme
 .light-theme
   background-color: $ligh-bg-color
   color: $ligh-font-color
@@ -74,7 +82,13 @@ body
     background: $ligh-bg-color
     &:active
       background: $ligh-bg-color
+  .secondary-color
+    color: $blue
+  .skill
+      background-color: #2d2d2d
+      color: #fff
 
+// Dark theme
 .dark-theme
   background-color: $dark-bg-color
   color: $dark-font-color
@@ -87,4 +101,8 @@ body
     background: $dark-bg-color
     &:active
       background: $dark-bg-color
-
+  .secondary-color
+    color: $yellow
+  .skill
+    background-color: #e7e7e7
+    color: #000000

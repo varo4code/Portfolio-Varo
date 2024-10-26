@@ -22,13 +22,13 @@
           <img class="flagicon" (click)="toggleFlags()" [src]="'assets/flags/'+this.currentLang+'.png'">
           <div #dropFlags class="drop-content bg-opposite-theme">
             @if (currentLang != 'en') {
-              <img class="flagicon" (click)="changeLang('en')" src="assets/flags/en.png">
+              <img class="flagicon" (click)="changeLang('en')" alt="English" src="assets/flags/en.png">
             }
             @if (currentLang != 'es') {
-              <img class="flagicon" (click)="changeLang('es')" src="assets/flags/es.png">
+              <img class="flagicon" (click)="changeLang('es')" alt="Spanish" src="assets/flags/es.png">
             }
             @if (currentLang != 'fr') {
-              <img class="flagicon" (click)="changeLang('fr')" src="assets/flags/fr.png">
+              <img class="flagicon" (click)="changeLang('fr')" alt="French" src="assets/flags/fr.png">
             }
 
           </div>

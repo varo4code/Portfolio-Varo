@@ -10,10 +10,9 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './main-banner.component.sass'
 })
 export class MainBannerComponent {
-  bannerImage: string = 'assets/profile-banner-dark.png';
+  bannerImage: string = '';
 
   constructor(private themeService: ThemeService) {
-    this.bannerImage = 'assets/profile-banner-'+ themeService.currentTheme +'.png';
   }
 
   ngOnInit() {
