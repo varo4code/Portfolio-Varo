@@ -34,4 +34,17 @@ export class AppComponent {
     { name: 'Git', icon: 'assets/icons/git.svg' }
   ];
 
+  titleApps = "Tools I use";
+  AppList = [
+    { name: 'Visual Studio Code', icon: 'assets/icons/visual-studio-code.svg' },
+    { name: 'Eclipse', icon: 'assets/icons/eclipse.svg' },
+    { name: 'Github', icon: 'assets/icons/github.svg' },
+    { name: 'Github Copilot', icon: 'assets/icons/github-copilot.svg' },
+    { name: 'Swagger', icon: 'assets/icons/swagger.svg' },  
+    { name: 'Jenkins', icon: 'assets/icons/jenkins.svg' },
+    { name: 'OpenShift', icon: 'assets/icons/openshift.svg' },
+    { name: 'Postman', icon: 'assets/icons/postman.svg' },
+    { name: 'Jira', icon: 'assets/icons/jira.svg' },
+  ];
+
 }
