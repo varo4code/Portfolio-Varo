@@ -1,13 +1,20 @@
 
+
+<!-- Header -->
+<header class="content">
+  <app-navbar></app-navbar>
+</header>
+
+<!-- Main -->
 <main class="main">
-  <div class="content">
-    <app-navbar></app-navbar>
-  </div>
-  
   <app-main-banner></app-main-banner>
   <app-tecnologies [title]="titleSkills" [list]="skillList"></app-tecnologies>
   <app-tecnologies [title]="titleApps" [list]="AppList"></app-tecnologies>
-
+  
+  <router-outlet />
 </main>
 
-<router-outlet />
+<!-- Footer -->
+<footer>
+
+</footer>

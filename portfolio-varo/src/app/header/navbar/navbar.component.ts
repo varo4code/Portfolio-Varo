@@ -1,7 +1,7 @@
 import { Component, ElementRef, inject, ViewChild } from '@angular/core';
-import { ThemeService } from '../services/theme.service';
+import { ThemeService } from '@services/theme.service';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '../services/language.service';
+import { LanguageService } from '@services/language.service';
 
 @Component({
   selector: 'app-navbar',

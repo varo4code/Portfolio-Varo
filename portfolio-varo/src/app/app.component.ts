@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './navbar/navbar.component';
-import { MainBannerComponent } from './main-banner/main-banner.component';
-import { TecnologiesComponent } from './tecnologies/tecnologies.component';
+import { NavbarComponent } from './header/navbar/navbar.component';
+import { MainBannerComponent } from './layout/main-banner/main-banner.component';
+import { TecnologiesComponent } from './layout/tecnologies/tecnologies.component';
 
 @Component({
   selector: 'app-root',
@@ -40,7 +40,8 @@ export class AppComponent {
     { name: 'Eclipse', icon: 'assets/icons/eclipse.svg' },
     { name: 'Github', icon: 'assets/icons/github.svg' },
     { name: 'Github Copilot', icon: 'assets/icons/github-copilot.svg' },
-    { name: 'Swagger', icon: 'assets/icons/swagger.svg' },  
+    { name: 'Swagger', icon: 'assets/icons/swagger.svg' },
+    { name: 'ChatGPT', icon: 'assets/icons/chatgpt.svg' },
     { name: 'Jenkins', icon: 'assets/icons/jenkins.svg' },
     { name: 'OpenShift', icon: 'assets/icons/openshift.svg' },
     { name: 'Postman', icon: 'assets/icons/postman.svg' },
