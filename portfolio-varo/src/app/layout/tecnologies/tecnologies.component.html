@@ -3,10 +3,10 @@
     <h3 class="mx-auto secondary-color">{{ title | translate }}</h3>
 
     <div class="skills-container mt-3">
-        @for (item of list; track item.name) {
+        @for (item of list; track item) {
             <div class="skill">
-                <img src="{{item.icon}}" alt="{{item.name}}">
-                <span>{{item.name}}</span>
+                <img [src]="iconService.getIcon(item)" alt="{{item}}">
+                <span>{{item}}</span>
             </div>
         }
     </div>

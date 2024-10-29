@@ -3,11 +3,13 @@ import { RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './header/navbar/navbar.component';
 import { MainBannerComponent } from './layout/main-banner/main-banner.component';
 import { TecnologiesComponent } from './layout/tecnologies/tecnologies.component';
+import { ProjectCardComponent } from './layout/projects/project-card/project-card.component';
+import { ProjectsComponent } from './layout/projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, MainBannerComponent, TecnologiesComponent],
+  imports: [RouterOutlet, NavbarComponent, MainBannerComponent, TecnologiesComponent, ProjectsComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.sass'
 })
@@ -16,36 +18,14 @@ export class AppComponent {
 
   titleSkills = "Technologies I use";
   skillList = [
-    { name: 'PHP', icon: 'assets/icons/php.svg' },
-    { name: 'Laravel', icon: 'assets/icons/laravel.svg' },
-    { name: 'Symfony', icon: 'assets/icons/symfony.svg' },
-    { name: 'Wordpress', icon: 'assets/icons/wordpress.svg' },
-    { name: 'Java', icon: 'assets/icons/java.svg' },
-    { name: 'Spring Boot', icon: 'assets/icons/spring-boot.svg' },
-    { name: 'MySQL', icon: 'assets/icons/mysql.svg' },
-    { name: 'Angular', icon: 'assets/icons/angular.svg' },
-    { name: 'NodeJS', icon: 'assets/icons/node-js.svg' },
-    { name: 'SASS', icon: 'assets/icons/sass.svg' },
-    { name: 'Bootstrap', icon: 'assets/icons/bootstrap.svg' },
-    { name: 'jQuery', icon: 'assets/icons/jquery.svg' },
-    { name: 'JavaScript', icon: 'assets/icons/javascript.svg' },
-    { name: 'CSS3', icon: 'assets/icons/css3.svg'  },
-    { name: 'Html5', icon: 'assets/icons/html5.svg' },
-    { name: 'Git', icon: 'assets/icons/git.svg' }
+    'PHP','Laravel','Symfony','Wordpress','Java','Spring Boot','MySQL',
+    'Angular','NodeJS','SASS','Bootstrap','jQuery','JavaScript','CSS3','Html5','Git'
   ];
 
   titleApps = "Tools I use";
   AppList = [
-    { name: 'Visual Studio Code', icon: 'assets/icons/visual-studio-code.svg' },
-    { name: 'Eclipse', icon: 'assets/icons/eclipse.svg' },
-    { name: 'Github', icon: 'assets/icons/github.svg' },
-    { name: 'Github Copilot', icon: 'assets/icons/github-copilot.svg' },
-    { name: 'Swagger', icon: 'assets/icons/swagger.svg' },
-    { name: 'ChatGPT', icon: 'assets/icons/chatgpt.svg' },
-    { name: 'Jenkins', icon: 'assets/icons/jenkins.svg' },
-    { name: 'OpenShift', icon: 'assets/icons/openshift.svg' },
-    { name: 'Postman', icon: 'assets/icons/postman.svg' },
-    { name: 'Jira', icon: 'assets/icons/jira.svg' },
+    'Visual Studio Code','Eclipse','Github','Github Copilot',
+    'Swagger','ChatGPT','Jenkins','OpenShift','Postman','Jira'
   ];
 
 }
