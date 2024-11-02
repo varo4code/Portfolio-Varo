@@ -1,0 +1,15 @@
+<div class="container title">
+    <h3 class="mx-auto secondary-color">{{ "Projects I've worked on" | translate }}</h3>
+
+    <div class="container grid-projects mt-3">
+        
+        @for (project of projects; track project.title) {
+            <app-project-card
+                [project]="project"
+                themeColor="blue">
+            </app-project-card>
+        }
+
+    </div>
+
+</div>

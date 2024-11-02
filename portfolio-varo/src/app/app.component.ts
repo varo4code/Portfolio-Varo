@@ -18,7 +18,7 @@ export class AppComponent {
 
   titleSkills = "Technologies I use";
   skillList = [
-    'PHP','Laravel','Symfony','Wordpress','Java','Spring Boot','MySQL',
+    'PHP','Laravel','Symfony','Java','Maven','Spring Boot','MySQL','Wordpress',
     'Angular','NodeJS','SASS','Bootstrap','jQuery','JavaScript','CSS3','Html5','Git'
   ];
 

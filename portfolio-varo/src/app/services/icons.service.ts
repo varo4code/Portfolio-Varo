@@ -4,34 +4,36 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class IconsService {
+  private base = 'assets/icons/';
   
   private iconMap: Map<string, string> = new Map([
-    ['PHP', 'assets/icons/php.svg'],
-    ['Laravel', 'assets/icons/laravel.svg'],
-    ['Symfony', 'assets/icons/symfony.svg'],
-    ['Wordpress', 'assets/icons/wordpress.svg'],
-    ['Java', 'assets/icons/java.svg'],
-    ['Spring Boot', 'assets/icons/spring-boot.svg'],
-    ['MySQL', 'assets/icons/mysql.svg'],
-    ['Angular', 'assets/icons/angular.svg'],
-    ['NodeJS', 'assets/icons/node-js.svg'],
-    ['SASS', 'assets/icons/sass.svg'],
-    ['Bootstrap', 'assets/icons/bootstrap.svg'],
-    ['jQuery', 'assets/icons/jquery.svg'],
-    ['JavaScript', 'assets/icons/javascript.svg'],
-    ['CSS3', 'assets/icons/css3.svg' ],
-    ['Html5', 'assets/icons/html5.svg'],
-    ['Git', 'assets/icons/git.svg'],
-    ['Visual Studio Code', 'assets/icons/visual-studio-code.svg'],
-    ['Eclipse', 'assets/icons/eclipse.svg'],
-    ['Github', 'assets/icons/github.svg'],
-    ['Github Copilot', 'assets/icons/github-copilot.svg'],
-    ['Swagger', 'assets/icons/swagger.svg'],
-    ['ChatGPT', 'assets/icons/chatgpt.svg'],
-    ['Jenkins', 'assets/icons/jenkins.svg'],
-    ['OpenShift', 'assets/icons/openshift.svg'],
-    ['Postman', 'assets/icons/postman.svg'],
-    ['Jira', 'assets/icons/jira.svg']
+    ['PHP', this.base+'php.svg'],
+    ['Laravel', this.base+'laravel.svg'],
+    ['Symfony', this.base+'symfony.svg'],
+    ['Wordpress', this.base+'wordpress.svg'],
+    ['Java', this.base+'java.svg'],
+    ['Spring Boot', this.base+'spring-boot.svg'],
+    ['MySQL', this.base+'mysql.svg'],
+    ['Angular', this.base+'angular.svg'],
+    ['NodeJS', this.base+'node-js.svg'],
+    ['SASS', this.base+'sass.svg'],
+    ['Bootstrap', this.base+'bootstrap.svg'],
+    ['jQuery', this.base+'jquery.svg'],
+    ['JavaScript', this.base+'javascript.svg'],
+    ['CSS3', this.base+'css3.svg' ],
+    ['Html5', this.base+'html5.svg'],
+    ['Git', this.base+'git.svg'],
+    ['Visual Studio Code', this.base+'visual-studio-code.svg'],
+    ['Eclipse', this.base+'eclipse.svg'],
+    ['Github', this.base+'github.svg'],
+    ['Github Copilot', this.base+'github-copilot.svg'],
+    ['Swagger', this.base+'swagger.svg'],
+    ['ChatGPT', this.base+'chatgpt.svg'],
+    ['Jenkins', this.base+'jenkins.svg'],
+    ['OpenShift', this.base+'openshift.svg'],
+    ['Postman', this.base+'postman.svg'],
+    ['Jira', this.base+'jira.svg'],
+    ['Maven', this.base+'maven.svg']
   ]);
 
   getIcon(key: string) {

@@ -1,0 +1,24 @@
+<div class="project-card">
+
+    <div class="project-card__image">
+        <img [src]="project.image" alt="{{ project.title }} logo" class="project-card__logo" />
+
+    </div>
+    <div class="project-card__content">
+        <h2>{{ project.title }}</h2>
+        <p>{{ project.comment | translate }}</p>
+        <p><b>{{ "Technologies used" | translate }}</b></p>
+        <div class="techs-container mt-3">
+            @for (tech of project.technologies; track tech) {
+                <div class="tech">
+                    <img [src]="iconService.getIcon(tech)" alt="{{tech}}">
+                    <span>{{tech}}</span>
+                </div>
+            }
+        </div>
+        <button (click)="goToProject(project.link)">
+            Go to {{ project.linkName }}
+        </button>
+    </div>
+</div>
+  
