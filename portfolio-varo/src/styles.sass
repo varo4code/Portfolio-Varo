@@ -9,8 +9,8 @@
 /* VARS */
 $dark-bg-color: #141a22
 $dark-font-color: #E6E6E6
-$ligh-bg-color: #E6E6E6   
-$ligh-font-color: #000000
+$light-bg-color: #E6E6E6   
+$light-font-color: #000000
 
 $yellow: #efae02
 $blue: #304986
@@ -29,7 +29,7 @@ body
     text-shadow: 0 0 1px rgba(0, 0, 0, 0.2)
   .bg-y
     background: $yellow
-    color: $ligh-font-color
+    color: $light-font-color
     &:hover
       background: $dark-bg-color
       color: $dark-font-color
@@ -55,7 +55,7 @@ body
         margin: auto
         animation: spin 0.6s
     .fa-sun
-      color: $ligh-font-color
+      color: $light-font-color
     .fa-moon
       color: $dark-font-color
     .flagicon
@@ -67,32 +67,33 @@ body
       text-align: center
 
   .skill, .tech
-    background-color: $ligh-bg-color
-    color: $ligh-font-color
-  
-  .project-card
-    background: $blue
+    background-color: $light-bg-color
+    color: $light-font-color
+
 
 
 /* THEMES */
 
 // Light theme
 .light-theme
-  background-color: $ligh-bg-color
-  color: $ligh-font-color
+  background-color: $light-bg-color
+  color: $light-font-color
   .bg-opposite-theme
     background: $dark-bg-color
     color: $dark-font-color
     &:active
       background: $dark-bg-color
   .bg-theme
-    background: $ligh-bg-color
+    background: $light-bg-color
     &:active
-      background: $ligh-bg-color
+      background: $light-bg-color
   .secondary-color
     color: $blue
   .skill, .tech
     border: 1px solid #2d2d2d
+  .project-card
+    background: $blue
+    color: $light-bg-color
   
 
 // Dark theme
@@ -100,13 +101,20 @@ body
   background-color: $dark-bg-color
   color: $dark-font-color
   .bg-opposite-theme
-    background: $ligh-bg-color
-    color: $ligh-font-color
+    background: $light-bg-color
+    color: $light-font-color
     &:active
-      background: $ligh-bg-color
+      background: $light-bg-color
   .bg-theme
     background: $dark-bg-color
     &:active
       background: $dark-bg-color
   .secondary-color
     color: $yellow
+    
+  .project-card
+    background: $light-bg-color
+    color: $dark-bg-color
+    .tech
+      border: 1px solid #2d2d2d
+
