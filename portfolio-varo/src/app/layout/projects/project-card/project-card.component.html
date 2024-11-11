@@ -16,9 +16,11 @@
                 </div>
             }
         </div>
-        <button (click)="goToProject(project.link)">
-            Go to {{ project.linkName }}
-        </button>
+        @if (project.link != null) {
+            <button (click)="goToProject(project.link)">
+                {{ "Go to" | translate }} {{ project.linkName }}
+            </button>
+        }
     </div>
 </div>
   

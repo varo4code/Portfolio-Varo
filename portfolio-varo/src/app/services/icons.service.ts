@@ -20,6 +20,7 @@ export class IconsService {
     ['Bootstrap', this.base+'bootstrap.svg'],
     ['jQuery', this.base+'jquery.svg'],
     ['JavaScript', this.base+'javascript.svg'],
+    ['TypeScript', this.base+'typescript.svg'],
     ['CSS3', this.base+'css3.svg' ],
     ['Html5', this.base+'html5.svg'],
     ['Git', this.base+'git.svg'],
