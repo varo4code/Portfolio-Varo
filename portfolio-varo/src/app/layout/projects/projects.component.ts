@@ -41,6 +41,20 @@ export class ProjectsComponent {
       link: 'https://rciconnect.es/'
     },
     {
+      title: 'Kaiku Caffe Latte',
+      image: 'assets/projects/kaiku.webp',
+      technologies: ['PHP','Wordpress','JavaScript','CSS3','Html5'],
+      linkName: 'kaikucaffelatte.com',
+      link: 'https://kaikucaffelatte.com/'
+    },
+    {
+      title: 'Kaiku Sin Lactosa',
+      image: 'assets/projects/kaikusinlactosa.webp',
+      technologies: ['PHP','Wordpress','JavaScript','CSS3','Html5'],
+      linkName: 'kaikusinlactosa.com',
+      link: 'https://kaikusinlactosa.com/'
+    },
+    {
       title: 'Isis Informatica',
       image: 'assets/projects/isis.webp',
       technologies: ['PHP','Wordpress','JavaScript','CSS3','Html5'],
