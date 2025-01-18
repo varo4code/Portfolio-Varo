@@ -13,6 +13,8 @@ import { LanguageService } from '@services/language.service';
 export class MainBannerComponent {
   bannerImage: string = '';
   currentLang: string = '';
+  icoGithub:string = '';
+  icoLinkedin:string = '';
 
   constructor(private themeService: ThemeService, private langService: LanguageService) {
   }
@@ -24,6 +26,12 @@ export class MainBannerComponent {
     this.langService.currentLang$.subscribe(lang => {
       this.currentLang = lang;
     });
+    this.themeService.icoGithub$.subscribe(ico => {
+      this.icoGithub = ico
+    })
+    this.themeService.icoLinkedin$.subscribe(ico => {
+      this.icoLinkedin = ico
+    })
   }
 
   getCVurl() {
