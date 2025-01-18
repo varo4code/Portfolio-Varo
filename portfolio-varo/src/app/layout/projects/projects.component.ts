@@ -15,7 +15,7 @@ export class ProjectsComponent {
     {
       title: 'Portfolio',
       image: 'assets/projects/portfolio.webp',
-      technologies: ['Angular','TypeScript','SASS','Html5'],
+      technologies: ['NodeJS','Angular','TypeScript','SASS','Html5'],
       linkName: 'varocode.com',
       link: 'https://varocode.com/'
     },
@@ -23,7 +23,7 @@ export class ProjectsComponent {
       title: 'Santander Digital Services',
       comment: "Development and enhancement of various internal tools for Banco Santander's management processes over a period of more than three years.",
       image: 'assets/projects/santander.webp',
-      technologies: ['Java', 'Maven', 'Spring Boot','PHP','Laravel','Html5']
+      technologies: ['Java', 'Maven', 'Spring Boot','PHP','Laravel','CSS3','Html5']
     },
     {
       title: 'Telefónica',
@@ -36,7 +36,7 @@ export class ProjectsComponent {
     {
       title: 'RCI Connect',
       image: 'assets/projects/rciconnect.webp',
-      technologies: ['Angular','PHP','TypeScript','CSS3','Html5'],
+      technologies: ['NodeJS','Angular','TypeScript','PHP','CSS3','Html5'],
       linkName: 'rciconnect.es',
       link: 'https://rciconnect.es/'
     },
@@ -53,6 +53,13 @@ export class ProjectsComponent {
       technologies: ['PHP','Wordpress','JavaScript','CSS3','Html5'],
       linkName: 'kaikusinlactosa.com',
       link: 'https://kaikusinlactosa.com/'
+    },
+    {
+      title: 'Formación Hosteleria',
+      image: 'assets/projects/formacionhosteleria.webp',
+      technologies: ['PHP','Wordpress','JavaScript','CSS3','Html5'],
+      linkName: 'formacionhosteleria.es',
+      link: 'https://formacionhosteleria.es/'
     },
     {
       title: 'Isis Informatica',
