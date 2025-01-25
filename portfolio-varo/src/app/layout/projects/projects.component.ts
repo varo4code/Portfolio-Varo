@@ -14,6 +14,7 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Portfolio',
+      comment: "You are here",
       image: 'assets/projects/portfolio.webp',
       technologies: ['NodeJS','Angular','TypeScript','SASS','Html5']
     },
