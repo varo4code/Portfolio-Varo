@@ -1,0 +1,10 @@
+
+<a [href]="link" 
+    class="mt-5 bg-y button btn" 
+    [class]="{'mini': linkName != ''}"
+    target=”_blank”>
+        {{ text | translate }} 
+        @if (linkName != '') {
+            {{linkName}}
+        }
+</a>

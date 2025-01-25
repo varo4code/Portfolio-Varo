@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ThemeService } from '@services/theme.service';
 import { TranslateModule } from '@ngx-translate/core';
 import { LanguageService } from '@services/language.service';
+import { ButtonComponent } from 'src/app/core/components/button/button.component';
 
 @Component({
   selector: 'app-main-banner',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, ButtonComponent],
   templateUrl: './main-banner.component.html',
   styleUrl: './main-banner.component.sass'
 })

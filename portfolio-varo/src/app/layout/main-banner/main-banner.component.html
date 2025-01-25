@@ -15,7 +15,7 @@
                     {{ "With a strong background in software development, I am dedicated to continuous growth and embracing the latest trends in the industry." | translate}}
                 </div>
                 <div>
-                    <a [href]="getCVurl()" class="mt-5 bg-y button btn" target=”_blank”>{{ "Download my CV" | translate }}</a>
+                    <app-button [link]="getCVurl()" [text]="'Download my CV'"></app-button>
                     <a href="https://www.linkedin.com/in/varocode/" target=”_blank”><img [src]="icoLinkedin" alt="LinkedId" class="mt-5 mr-3 ico-redes"></a>
                     <a href="https://github.com/varo4code" target=”_blank”><img [src]="icoGithub" alt="GitHub" class="mt-5 ico-redes"></a>
                 </div>

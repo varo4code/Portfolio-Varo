@@ -1,11 +1,12 @@
 import { Component, inject, Input, input } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
 import { IconsService } from '@services/icons.service';
+import { ButtonComponent } from 'src/app/core/components/button/button.component';
 
 @Component({
   selector: 'app-project-card',
   standalone: true,
-  imports: [TranslateModule],
+  imports: [TranslateModule, ButtonComponent],
   templateUrl: './project-card.component.html',
   styleUrl: './project-card.component.sass'
 })

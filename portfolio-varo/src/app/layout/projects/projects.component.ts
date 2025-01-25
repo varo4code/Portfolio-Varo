@@ -15,9 +15,7 @@ export class ProjectsComponent {
     {
       title: 'Portfolio',
       image: 'assets/projects/portfolio.webp',
-      technologies: ['NodeJS','Angular','TypeScript','SASS','Html5'],
-      linkName: 'varocode.com',
-      link: 'https://varocode.com/'
+      technologies: ['NodeJS','Angular','TypeScript','SASS','Html5']
     },
     {
       title: 'Santander Digital Services',
