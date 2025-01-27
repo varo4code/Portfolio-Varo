@@ -6,15 +6,7 @@
 @import "@fontsource/poppins/400.css" // Specify weight
 @import "@fontsource/poppins/400-italic.css" // Specify weight and style
 
-/* VARS */
-$dark-bg-color: #141a22
-$dark-font-color: #E6E6E6
-$light-bg-color: #E6E6E6   
-$light-font-color: #000000
-
-$yellow: #efae02
-$blue: #304986
-$general-font: 'Poppins'
+@import "src/variables.sass"
 
 
 @keyframes spin
@@ -95,7 +87,8 @@ body
     background: transparent
     border: 1px solid
     color: $light-font-color
-  
+  .ico-redes
+    fill: $light-font-color
 
 // Dark theme
 .dark-theme
@@ -118,4 +111,6 @@ body
     color: $dark-bg-color
     .tech
       border: 1px solid #2d2d2d
+  .ico-redes
+    fill: $dark-font-color
 
