@@ -13,12 +13,12 @@ export class ProjectsComponent {
   selected: string = 'websites';
 
   websites = [
-    {
-      title: 'Santander Digital Services',
-      comment: "Development and enhancement of various internal tools for Banco Santander's management processes over a period of more than three years.",
-      image: 'assets/projects/santander.webp',
-      technologies: ['Java', 'Maven', 'Spring Boot','PHP','Laravel','CSS3','Html5']
-    },
+    // {
+    //   title: 'Santander Digital Services',
+    //   comment: "Development and enhancement of various internal tools for Banco Santander's management processes over a period of more than three years.",
+    //   image: 'assets/projects/santander.webp',
+    //   technologies: ['Java', 'Maven', 'Spring Boot','PHP','Laravel','CSS3','Html5']
+    // },
     {
       title: 'Telefónica',
       // comment: "Migration of Telefónica's website to WordPress VIP, with the development of a custom theme and a plugin with exclusive blocks for the Gutenberg editor.",
@@ -67,7 +67,7 @@ export class ProjectsComponent {
   projects = [
     {
       title: 'Portfolio',
-      comment: "You are here",
+      comment: "You are here.",
       image: 'assets/projects/portfolio.webp',
       technologies: ['NodeJS', 'Angular', 'TypeScript', 'SASS', 'Html5']
     }

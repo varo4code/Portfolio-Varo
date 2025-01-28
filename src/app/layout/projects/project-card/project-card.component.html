@@ -7,7 +7,7 @@
     <div class="project-card__content">
         <h2>{{ project.title }}</h2>
         <p>{{ project.comment | translate }}</p>
-        <p><b>{{ "Technologies used" | translate }}</b></p>
+        <!-- <p><b>{{ "Technologies used" | translate }}</b></p> -->
         <div class="techs-container mt-3">
             @for (tech of project.technologies; track tech) {
                 <div class="tech">
@@ -17,7 +17,9 @@
             }
         </div>
         @if (project.link != null) {
-            <app-button [link]="project.link" [text]="'Go to'" [linkName]="project.linkName"></app-button>
+            <div class="btn-container">
+                <app-button [link]="project.link" [text]="'Go to'" [linkName]="project.linkName"></app-button>
+            </div>
         }
     </div>
 </div>
