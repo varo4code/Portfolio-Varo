@@ -9,7 +9,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './button.component.sass'
 })
 export class ButtonComponent {
-  @Input() link: string = '';
+  @Input() link?: string = '';
   @Input() text: string = '';
   @Input() linkName?: string = '';
 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, Renderer2 } from '@angular/core';
 import { ProjectCardComponent } from './project-card/project-card.component';
 import { TranslateModule } from '@ngx-translate/core';
 
@@ -10,14 +10,9 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './projects.component.sass'
 })
 export class ProjectsComponent {
+  selected: string = 'websites';
 
-  projects = [
-    {
-      title: 'Portfolio',
-      comment: "You are here",
-      image: 'assets/projects/portfolio.webp',
-      technologies: ['NodeJS','Angular','TypeScript','SASS','Html5']
-    },
+  websites = [
     {
       title: 'Santander Digital Services',
       comment: "Development and enhancement of various internal tools for Banco Santander's management processes over a period of more than three years.",
@@ -68,5 +63,20 @@ export class ProjectsComponent {
       link: 'https://isisinformatica.es/'
     }
   ];
+
+  projects = [
+    {
+      title: 'Portfolio',
+      comment: "You are here",
+      image: 'assets/projects/portfolio.webp',
+      technologies: ['NodeJS', 'Angular', 'TypeScript', 'SASS', 'Html5']
+    }
+  ];
+
+  constructor(private renderer: Renderer2, private el: ElementRef) { }
+
+  select(option: string) {
+    this.selected = option;
+  }
 
 }

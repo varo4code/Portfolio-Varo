@@ -12,7 +12,6 @@ import { ButtonComponent } from 'src/app/core/components/button/button.component
 })
 export class ProjectCardComponent {
   @Input() project: any;
-  @Input() themeColor: 'blue' | 'red' | 'purple' = 'blue';
 
   iconService: IconsService = inject(IconsService);
 
