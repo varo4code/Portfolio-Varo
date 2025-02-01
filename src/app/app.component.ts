@@ -9,23 +9,8 @@ import { ProjectsComponent } from './layout/projects/projects.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavbarComponent, MainBannerComponent, TecnologiesComponent, ProjectsComponent],
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.sass'
+  styleUrl: './app.component.sass',
 })
-export class AppComponent {
-  title = 'portfolio-varo';
-
-  titleSkills = "Technologies I use";
-  skillList = [
-    'PHP','Laravel','Symfony','Java','Maven','Spring Boot','MySQL','Wordpress',
-    'Angular','NodeJS','SASS','Bootstrap','jQuery','JavaScript','CSS3','Html5','Git'
-  ];
-
-  titleApps = "Tools I use";
-  AppList = [
-    'Visual Studio Code','Eclipse','Github','Github Copilot',
-    'Swagger','ChatGPT','Jenkins','OpenShift','Postman','Jira'
-  ];
-
-}
+export class AppComponent {}
