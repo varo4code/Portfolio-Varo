@@ -31,6 +31,8 @@ export class MainLayoutComponent {
     'Wordpress',
     'Angular',
     'NodeJS',
+    'Vue',
+    'Nuxt',
     'SASS',
     'Bootstrap',
     'jQuery',
