@@ -1,6 +1,6 @@
 <div class="container-projects">
 
-    <div class="container-selector">
+    <!-- <div class="container-selector">
         <div class="content-selector">
             <div class="selector" [class.active]="selected === 'websites'" (click)="select('websites')">
                 <span>{{ "Websites I've worked on" | translate }}</span>
@@ -9,10 +9,10 @@
                 <span>{{ "Projects I made myself" | translate }}</span>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- // Websites -->
-    @if(selected === 'websites') {
+    <!-- @if(selected === 'websites') { -->
         <div class="container title content-selected">
             <h3 class="mx-auto secondary-color">{{ "Websites I've worked on" | translate }}</h3>
 
@@ -22,11 +22,11 @@
                 }
             </div>
         </div>
-    }
+    <!-- } -->
 
                 
     <!-- // Projects -->
-    @if(selected === 'projects') {
+    <!-- @if(selected === 'projects') {
         <div class="container title content-selected">
             <h3 class="mx-auto secondary-color">{{ "Projects I made myself" | translate }}</h3>
                         
@@ -36,5 +36,5 @@
                 }
             </div>
         </div>
-    }
+    } -->
 </div>
